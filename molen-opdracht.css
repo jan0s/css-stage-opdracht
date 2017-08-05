@@ -1,0 +1,79 @@
+/*
+ * Dit is het bestand dat je moet aanpassen
+ * succes!
+ */
+#grond {
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	background-color: #4FD04E;
+	bottom: 0;
+}
+
+	#molen {
+		position: relative;
+		margin: 0 auto;
+		background-color: #927954;
+		height: 230px;
+		width: 30%;
+		margin-top: -210px;
+	}
+
+		#onderkant {
+			position: absolute;
+			background-color: #216020;
+			height: 20%;
+			width: 100%;
+			bottom: -20%;
+		}
+
+			#onderkant #deur {
+				position: relative;
+				background-color: #EC8C44;
+				margin: 0 auto;
+				bottom: -10px;
+				height: 80%;
+				width: 20%;
+			}
+
+			#onderkant #deur i {
+				position: absolute;
+				border-radius: 50%;
+				background-color: yellow;
+				height: 6px;
+				width: 6px;
+				left: 19px;
+				top: 14px;
+			}
+
+		#bovenkant {
+				position: absolute;
+				background-color: #765242;
+				height: 30%;
+				width: 100%;
+				margin-top: -45%;
+				border-top-right-radius: 100px;
+				border-top-left-radius: 100px;
+		}
+
+			#wieken {
+				background-color: yellow;
+				border: 50px solid red;
+				display: table;
+				margin: 0 auto;
+				animation: roteren 5s infinite;
+			}
+
+
+
+@keyframes roteren {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
